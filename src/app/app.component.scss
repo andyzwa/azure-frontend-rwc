@@ -1,0 +1,25 @@
+$primary-color: #abdcab;
+$border-color: #272727;
+$normal-margin: 10px;
+
+* {
+  color: #272727;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.card {
+  background-color: $primary-color;
+  border-radius: 5px;
+  padding: 1px $normal-margin;
+  margin: $normal-margin;
+  font-family: Arial, serif;
+
+}
+
+.card h2 {
+  border-bottom: 0.5vw solid $border-color;
+  width: 100%;
+  text-transform: uppercase;
+  padding-bottom: $normal-margin;
+  font-size: 20px;
+}

@@ -1,0 +1,13 @@
+{
+    "cards": [{
+      "id" : 1,
+      "title": "Requirements",
+      "content": "Computer, Browser, Keyboard, Node.js",
+      "color": "#ff2"
+    }, {
+      "id" : 2,
+      "title": "Start with Angular",
+      "content": "ng serve --open to see results",
+      "color": "#0bdcab"
+    }]
+}

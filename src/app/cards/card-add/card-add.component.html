@@ -1,0 +1,26 @@
+<h3>Add Card</h3>
+
+<form class="form-inline mb-4" >
+  <form [formGroup]="this.cardsService.cardForm" (submit)="onSubmit()" class="form-inline mb-4" [ngStyle]="{background: backgroundColor}">
+    <label class="sr-only" >Title</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" class="form-control" formControlName="title" placeholder="Title">
+    </div>
+    <label class="sr-only" >Content</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" class="form-control" formControlName="content" placeholder="Content">
+    </div>
+    <label class="sr-only" >Id</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <input type="text" readonly class="form-control" formControlName="id" placeholder="Id">
+    </div>
+    <div class="input-group mb-2 mr-sm-2">
+      <app-color-picker [color]="backgroundColor" [heading]="'Color'"
+                        (event)="setColor('background', $event)"></app-color-picker>
+    </div>
+    <button [disabled]="this.cardsService.cardForm.invalid" type="submit" class="btn btn-primary mb-2">Add/Update</button>
+    <button (click)="resetform()" type="button" class="btn btn btn-success mb-2">Cancel</button>
+
+  </form>
+  <br>
+</form>
